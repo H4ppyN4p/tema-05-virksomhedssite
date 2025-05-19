@@ -1,6 +1,7 @@
 
 /* HEADER STYLING - AVI */
 header {
+    font-family: 'Karla', sans-serif;
     background-color: #3E4D53;
     width: 70vw;
     height: 75px;
@@ -48,12 +49,10 @@ header {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
   
-  
   .nav-links li.active a {
     background-color: #D8E4E4;
     color: #000000;
   }
-  
   
   .burger {
     display: none;
@@ -69,8 +68,7 @@ header {
     border-radius: 2px;
     transition: all 0.3s;
   }
-  
-  
+
   @media (max-width: 768px) {
     nav {
       flex-direction: column;
