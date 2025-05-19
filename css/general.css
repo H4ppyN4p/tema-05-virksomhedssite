@@ -34,10 +34,8 @@
 }
 
 body {
-  background-image: url(../img/illuback.svg);
+  background-image: url(../img/baggrunden.webp);
   background-size: cover;
-  background-color: #f0ebe3;
-  background-blend-mode: exclusion;
 }
 
 :root {
@@ -90,7 +88,43 @@ body {
 }
 
 footer {
-  background-color: black;
+  background-color: #3e4d53;
+  padding: 20px 20px 15px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15%;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100%;
+  padding-left: 140px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100%;
+  padding-left: 250px;
+}
+
+.infofooter {
+  font-family: KarlaRegular;
+  color: white;
+  padding-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding-left: 5px;
+}
+
+.copyright {
+  color: white;
+  font-family: KarlaRegular;
+  text-align: center;
 }
 
 /* På mobil */
