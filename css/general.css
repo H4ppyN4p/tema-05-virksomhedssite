@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'KarlaLight';
+    src: url(../fonts/Karla-Light.ttf);
+}
+
+@font-face {
+    font-family: 'KarlaMedium';
+    src: url(../fonts/Karla-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'KarlaRegular';
+    src: url(../fonts/Karla-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'KarlaSemiBold';
+    src: url(../fonts/Karla-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'MerriweatherBold';
+    src: url(../fonts/Merriweather_24pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'MerriweatherMedium';
+    src: url(../fonts/Merriweather_24pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'MerriweatherRegular';
+    src: url(../fonts/Merriweather_24pt-Regular.ttf);
+}
+
 :root {
     --primary-color: #000000;
     --secondary-color: #000000;
@@ -6,6 +41,7 @@
     --dark-color: #000000;
     --accent-color: #000000;
     --background-color: #000000;
+
 }
 
 * {
