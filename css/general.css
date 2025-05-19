@@ -14,3 +14,48 @@
     box-sizing: border-box;
 }
 
+
+/* På tablet og Desktop */
+@media (width > 600px) {
+
+    .grid_1x8 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .grid_row_1x3 {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .desk-col-2 {
+        grid-column: span 2;
+    }
+
+    .desk-col-3 {
+        grid-column: span 3;
+    }
+
+    .desk-col-4 {
+        grid-column: span 4;
+    }
+
+    .desk-col-5 {
+        grid-column: span 5;
+    }
+
+
+    .disk-row-2 {
+        grid-row: span 2;
+    }
+
+}
+
+/* På mobil */
+@media (width <= 600px) {
+        .reverse-order-phone {
+        order: 0;
+    }
+
+}
+
