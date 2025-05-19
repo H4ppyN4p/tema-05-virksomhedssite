@@ -33,6 +33,13 @@
   src: url(../fonts/Merriweather_24pt-Regular.ttf);
 }
 
+body {
+  background-image: url(../img/illuback.svg);
+  background-size: cover;
+  background-color: #f0ebe3;
+  background-blend-mode: exclusion;
+}
+
 :root {
   --primary-color: #000000;
   --secondary-color: #000000;
@@ -55,7 +62,6 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
   }
-
 
   .grid_row_1x3 {
     display: grid;
