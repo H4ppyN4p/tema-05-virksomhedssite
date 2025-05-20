@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/medier.css">
 </head>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.webp" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omseolve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      </nav>
+    </header>
+    <h1 class="media">Medier</h1> 
 <body>
+    <div class="slider-container">
+        <div class="slides" id="slides">
+          <div class="slide" data-index="0">
+            <img src="img/forlag.webp" alt="">
+            <div class="slide-content">
+              <h2>Psykologernes fagblad</h2>
+              <p>Artikelen går tæt på normkritisk psykologi og et normbrydende liv for Sølve som psykolog.</p>
+              <a href="https://www.dp.dk/p-psykologernes-fagmagasin/">Dansk Psykologiforeningsblad</a>
+            </div>
+          </div>
     
+          <div class="slide" data-index="1">
+            <img src="img/drtv.webp" alt="">
+            <div class="slide-content">
+              <h2>Sex med P3 - Transkroppen</h2>
+              <p>I programmet taler transpersoner selv om deres krop, og Sølve deltager som ekspert i køn og nonbinær psykolog.</p>
+              <a href="https://www.dr.dk/drtv/episode/sex-med-p3_-transkrop_338763">DRTV - Sex med P3</a>
+            </div>
+          </div>
+    
+          <div class="slide" data-index="2">
+            <img src="img/informationen.webp" alt="">
+            <div class="slide-content">
+              <h2>Parterapeuter og kønsroller</h2>
+              <p>Parterapeuters råd har ikke kun personlige, men også politiske konsekvenser.</p>
+              <a href="https://www.information.dk/debat/2020/03/parterapeuter-gaar-ukritisk-koensroller-fastholder-patriarkalske-magtstrukturer">Information</a>
+            </div>
+          </div>
+    
+          <div class="slide" data-index="3">
+            <img src="img/politiken.webp" alt="">
+            <div class="slide-content">
+              <h2>Vi skal stoppe med at forbinde ’offer’ med ’offermentalitet’</h2>
+              <p>Vi må som samfund gøre markant mere for at stoppe offerbebrejdelse.</p>
+              <a href="https://politiken.dk/debat/debatindlaeg/art7920672">Politiken</a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="slider-bar">
+          <input type="range" id="sliderRange" min="0" max="3" value="0">
+        </div>
+      </div>
+    
+      <script src="script.js"></script>
 </body>
+
+
+
 </html>
