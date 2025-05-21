@@ -109,7 +109,7 @@ h4 {
   }
 
   .disk-row-2 {
-    grid-row: span 2;
+    grid-row: span 4;
   }
   footer {
     background-color: #3e4d53;
