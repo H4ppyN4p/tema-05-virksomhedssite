@@ -1,0 +1,95 @@
+ul,
+li {
+  padding: 10px;
+}
+
+p,
+ul,
+button {
+  font-family: KarlaLight;
+}
+
+p {
+  line-height: 1.25rem;
+  padding: 10px;
+}
+
+h1 {
+  font-family: MerriweatherBold;
+}
+
+.omsoelve {
+  margin-left: 280px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: KarlaRegular;
+}
+
+h3,
+h4,
+a {
+  padding: 10px;
+}
+
+a {
+  font-family: KarlaRegular;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  align-items: start;
+}
+
+.left-column {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  max-width: 500px;
+  margin-left: 250px;
+}
+
+.textbox1,
+.textbox3 {
+  background-color: #eef2f4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textbox2,
+.textbox4 {
+  background-color: #fffefe;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-column {
+  display: grid;
+  grid-template-rows: 1fr;
+  max-width: 500px;
+  gap: 20px;
+}
+
+.image1 {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+button {
+  background-color: #3e4d53;
+  font-size: medium;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+}
