@@ -1,0 +1,58 @@
+main {
+    min-height: 400px;
+    width: 100%;
+    background-color: #F0EBE3;
+}
+
+.grid_1x8 {
+    margin: 20px;
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+#viden {
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 4px 2px rgba(0, 0, 0, 0.25);
+    background-color: #DCE8EA;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-top: 20px;
+}
+
+#metoder {
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 4px 2px rgba(0, 0, 0, 0.25);
+    background-color: #F8F5F0;
+
+
+}
+
+.metode-sektion {
+    margin-top: 23px;
+}
+
+.metode-sektion h3 {
+    margin-bottom: 7px;
+}
+
+/* På mobil */
+@media (width <= 600px) {
+  #viden {
+    margin-bottom: 30px;
+  }
+}
