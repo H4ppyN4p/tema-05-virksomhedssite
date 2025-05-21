@@ -53,10 +53,6 @@ a {
 		grid-template-columns: repeat(8, 1fr);
 	}
 
-	/* .desk-row-4 {
-		grid-row: span 4;
-	} */
-
 	.desk-col-tekst-4 {
 		grid-column: span 4;
 		background-color: #f8f5f0;
