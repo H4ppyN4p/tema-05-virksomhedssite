@@ -18,6 +18,7 @@ h1 {
   font-family: MerriweatherBold;
 }
 
+
 h2,
 h3,
 h4 {
@@ -35,6 +36,7 @@ a {
   text-decoration: none;
   color: #ffff;
 }
+
 
 .grid-solve {
   display: grid;
@@ -75,10 +77,12 @@ a {
 }
 
 .image1 {
+
+  width: 500px;
+  height: 700px;
   width: 100%;
   aspect-ratio: 5 / 7;
-  object-fit: cover;
-  border-radius: 15px;
+
 }
 
 button {
