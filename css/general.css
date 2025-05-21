@@ -269,10 +269,7 @@ nav {
 /* Laptop  */
 .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
+   
 }
 
 .mobile-menu {
@@ -334,17 +331,36 @@ nav {
     right: 0;
   }
 
-     .menu-toggle {
+  .menu-toggle {
         display: block;
-    }
+        width: 40px;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+  }
 
-    .left-nav ul, .right-nav ul {
-        display: none;
-    }
+    .menu-toggle-close {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 20px;
+        border: 2px solid #2f3e38;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        cursor: pointer;
+  }
 
-    .mobile-menu.active {
-        display: block;
-    }
+  .left-nav ul, .right-nav ul {
+      display: none;
+  }
+
+  .mobile-menu.active {
+      display: block;
+  }
 }
 
 
