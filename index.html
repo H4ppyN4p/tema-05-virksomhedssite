@@ -8,29 +8,117 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
-      <nav>
+     <header>
+    <nav>
         <div class="logo">
-          <img src="img/logo.webp" alt="Logo" />
+            <img src="img/logo.webp" alt="Logo">
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="terapi.html">Terapi</a></li>
-          <li><a href="normkritik.html">Normkritik</a></li>
-          <li><a href="undervisning.html">Læringscenter</a></li>
-          <li><a href="medier.html">Medier</a></li>
-          <li><a href="omseolve.html">Om Sølve</a></li>
-          <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
         </ul>
-        <div class="burger">
-          <div></div>
-          <div></div>
-          <div></div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu">
+            <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li>  <button class="menu-toggle-close" onclick="toggleMenu()"> X </button></li>
+
+            </ul>
         </div>
-      </nav>
+        
+        </nav>
     </header>
     <main>
-      <div>Her er lidt tekst for at bryde header og footer op</div>
+      <div id="main-container">
+        <div class="info-container">
+          <div class="velkomst-container">
+            <h1>Velkommen</h1>
+            <h3>Sølve Storm Falkenberg</h3>
+            <p>
+              Cand.psych. <br />
+              Gender Certificate+ fra Koordinationen for Kønsforskning, KU.
+            </p>
+            <button class="btn2">Book Terapi</button>
+          </div>
+
+          <div class="img1">
+            <img class="img1" src="/img/Sølve2.webp" alt="Billede af Sølve" />
+          </div>
+
+          <div class="tid-container">
+            <div arbejds-container>
+              <h4>Arbejdstider for terapi</h4>
+              <ul>
+                <li>Mandag: 10.00 - 14.55</li>
+                <li>Tirsdag: 10.00 - 14.45</li>
+                <li>Onsdag: 10.00 - 14.55</li>
+                <li>Torsdag: 13.00 - 19.00</li>
+              </ul>
+              <p>
+                Fredage underviser jeg typisk, eller forbereder undervisning.
+                Det er muligt at få sessioner online eller telefonisk.
+              </p>
+            </div>
+
+            <div class="pris-container">
+              <h4>Priser og vilkår</h4>
+              <ul>
+                <li>Individuel session 55 min. - 1200 kr</li>
+                <li>Parterapi/gruppe 85 min. - 1800 kr</li>
+              </ul>
+              <p>
+                Desværre tager jeg ikke henvisning fra læge eller har samarbejde
+                med sygeforsikring.
+              </p>
+              <p>
+                Afbud er senest kl. 12 dagen før, ellers er det fuld pris. Helst
+                skal afbud ske 48 timer før, så jeg kan give en anden tiden.
+              </p>
+            </div>
+          </div>
+
+          <div class="person-container">
+            <h4>Personlig Baggrund</h4>
+            <p>
+              Sølve er biseksuel og nonbinær med en baggrund i social udsathed.
+              Deres passion for viden om komplekse emner stammer fra det levede
+              liv og undergrundskulturer, mere end fra teorier og forskning.
+              Sølve brænder for at skabe heling og udvikling for dem, der føler
+              sig anderledes eller usynlige, og for at skabe rum med dyb empati
+              og positive fællesskaber for diversiteten under regnbuen. <br />
+              <a class="link1" href="omsoelve.html">Læs mere om Sølve her</a>
+            </p>
+          </div>
+
+          <div class="prof-container">
+            <h4>Professionelt virke</h4>
+            <p>
+              Sølve er klinisk psykolog med en passion for normkritik, psykologi
+              og pædagogik, særligt inden for køn, seksualitet og LGBTQAI+
+              emner. Sølve underviser, superviserer og driver en normkritisk
+              praksis, der inkluderer viden om socialklasse, kulturforskelle,
+              racisme og LGBTQAI+ identitet. Tidligere har Sølve arbejdet som
+              projektleder for 'Positive Fællesskaber', et gruppeforløb for unge
+              queers med komplekse problemstillinger.
+              <br />
+              <a class="link1" href="omsoelve.html"
+                >Læs mere om Sølves praksis og værdier her</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -55,5 +143,8 @@
         <div class="copyright">&#169; Sølve Storm</div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
+
   </body>
 </html>

@@ -1,7 +1,6 @@
 main {
     min-height: 400px;
     width: 100%;
-    background-color: #F0EBE3;
 }
 
 .grid_1x8 {
@@ -24,11 +23,11 @@ h4 {
     background-color: #DCE8EA;
 }
 
-ul {
+.viden-ul {
     margin-left: 20px;
 }
 
-li {
+.viden-ul li {
     margin-top: 20px;
 }
 

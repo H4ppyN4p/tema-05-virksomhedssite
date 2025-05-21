@@ -8,7 +8,38 @@
     <link rel="stylesheet" href="css/omsoelve.css" />
   </head>
   <body>
-    <header></header>
+        <header>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.webp" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu">
+            <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li>  <button class="menu-toggle-close" onclick="toggleMenu()"> X </button></li>
+
+
+            </ul>
+        </div>
+        
+        </nav>
+    </header>
     <main>
       <div id="main-container">
         <h1 class="omsoelve">Om Sølve og deres arbejde</h1>
@@ -165,5 +196,6 @@
         <div class="copyright">&#169; Sølve Storm</div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
