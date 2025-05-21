@@ -57,7 +57,7 @@ body {
 /* På tablet og Desktop */
 @media (width > 600px) {
   #main-container {
-    padding: 0 100px;
+    padding: 0 200px;
   }
 
   .grid_1x8 {
