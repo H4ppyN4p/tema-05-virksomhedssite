@@ -8,7 +8,41 @@
     <link rel="icon" type="Favicon" href="/img/logo.webp" />
     <link rel="stylesheet" href="css/fælleskaber.css" />
   </head>
+
   <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html"><img src="img/logo.webp" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="terapi.html">Terapi</a></li>
+          <li><a href="normkritik.html">Normkritik</a></li>
+          <li><a href="undervisning.html">Læringscenter</a></li>
+          <li><a href="medier.html">Medier</a></li>
+          <li><a href="omsoelve.html">Om Sølve</a></li>
+          <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li>
+              <button class="menu-toggle-close" onclick="toggleMenu()">
+                X
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main class="container">
       <h1>Positive fællesskaber</h1>
       <section class="intro">
@@ -90,6 +124,28 @@
         </div>
       </section>
     </main>
+     <footer>
+      <div id="grid-container">
+        <div class="footer-content-container">
+          <img src="/img/phonelogo.webp" alt="Phone icon" />
+          <img src="/img/maillogo.webp" alt="Mail icon" />
+        </div>
+        <div class="footer-content-container">
+          <img src="/img/instalogo.webp" alt="insta logo" />
+          <img src="/img/Fblogo.webp" alt="Fb logo" />
+        </div>
+        <div class="footer-content-container">
+          <img src="/img/Prideflag.webp" alt="Pride flag" />
+          <img src="/img/NBflag.webp" alt="Non Binary flag" />
+        </div>
+
+        <div class="infofooter">
+          <p>Sms: +4593866601</p>
+          <p>Mail: soelvestorm@protonmail.com</p>
+        </div>
+        <div class="copyright">&#169; Sølve Storm</div>
+      </div>
+    </footer>
   </body>
 
 </html>
