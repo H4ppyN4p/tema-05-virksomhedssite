@@ -78,7 +78,7 @@ h4 {
 
 /* På tablet og Desktop */
 @media (width > 600px) {
-  #main-container {
+  main {
     padding: 0 200px;
   }
 
@@ -268,38 +268,36 @@ nav {
 
 /* Laptop  */
 .menu-toggle {
-    display: none;
-   
+  display: none;
 }
 
 .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-menu ul li {
-    padding: 15px;
+  padding: 15px;
 }
 
 .mobile-menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: block;
 }
-
 
 /* Responsive Styles */
 @media (max-width: 1000px) {
@@ -332,35 +330,34 @@ nav {
   }
 
   .menu-toggle {
-        display: block;
-        width: 40px;
-        align-self: flex-end;
-        margin-bottom: 10px;
-        background: none;
-        border: none;
-        font-size: 2rem;
-        cursor: pointer;
+    display: block;
+    width: 40px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
   }
 
-    .menu-toggle-close {
-        align-self: flex-end;
-        background: none;
-        border: none;
-        font-size: 20px;
-        border: 2px solid #2f3e38;
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
-        cursor: pointer;
+  .menu-toggle-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 20px;
+    border: 2px solid #2f3e38;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
   }
 
-  .left-nav ul, .right-nav ul {
-      display: none;
+  .left-nav ul,
+  .right-nav ul {
+    display: none;
   }
 
   .mobile-menu.active {
-      display: block;
+    display: block;
   }
 }
-
-
