@@ -145,10 +145,11 @@ h4 {
 }
 
 /* På mobil */
-@media (width <= 600px) {
+@media (width <= 800px) {
   .reverse-order-phone {
     order: 0;
   }
+
   #grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
