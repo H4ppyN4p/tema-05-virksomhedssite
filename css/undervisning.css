@@ -35,8 +35,10 @@
   
   /* Billede */
   .desk-col-4 img {
-    width: 100%;
+
     border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover
   }
 
   .desk_row_2 {
