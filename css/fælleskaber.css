@@ -4,17 +4,21 @@
   padding: 0;
 }
 
+main { 
+  margin-bottom: 30px;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f8f6f2;
   color: #222;
   line-height: 1.6;
-  padding: 20px;
 }
 
 main.container {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .intro {
@@ -23,10 +27,6 @@ main.container {
   gap: 30px;
   align-items: flex-start;
   margin-bottom: 60px;
-}
-
-.intro-text {
-  flex: 1 1 500px;
 }
 
 .intro-text h1 {
@@ -81,7 +81,7 @@ main.container {
 }
 
 .community-card {
-  background-color: #f1f1f1;
+  background-color: #eef2f4;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -103,9 +103,14 @@ main.container {
   color: #444;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .second-order {
+    order: 1  ;
+  }
+
   .intro {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .intro-image,
