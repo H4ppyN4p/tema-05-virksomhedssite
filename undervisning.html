@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/undervisning.css">
-</head>
-<body>
-    
-</body>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Læringscenter</title>
+    <link rel="icon" type="Favicon" href="img/logo.webp" />
+    <link rel="stylesheet" href="css/undervisning.css" />
+    <link rel="stylesheet" href="css/general.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo.webp" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="terapi.html">Terapi</a></li>
+          <li><a href="normkritik.html">Normkritik</a></li>
+          <li><a href="undervisning.html">Læringscenter</a></li>
+          <li><a href="medier.html">Medier</a></li>
+          <li><a href="omsoelve.html">Om Sølve</a></li>
+          <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li><button class="menu-toggle-close" onclick="toggleMenu()">X</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Læringscenter</h1>
+      <div class="grid_1x8 grid_row_1x3">
+        <div class="desk-col-4">
+          <p>Sølve tilbyder normkritiske foredrag og undervisning under emnerne:</p>
+          <ul>
+            <li><strong>Køn</strong></li>
+            <li><strong>Krop & seksualitet</strong></li>
+            <li><strong>LGBTQIA+</strong></li>
+          </ul>
+        </div>
+
+        <div class="desk-col-4 desk_row_2">
+          <img src="img/soeølve.webp" alt="Foredragssituation" />
+        </div>
+
+        <div class="desk-col-4 blue-background">
+          <h3>For hvem kunne dette være relevant?</h3>
+          <br />
+          <p>Det kan være i et Socialtilsyn i en kommune der behøver viden om LGBTQAI+ perspektivet, eller konkret om transpersoners liv og vilkår, samt sociale og psykologiske udfordringer.</p>
+          <br />
+          <p>Jeg kommer også ofte ud på arbejdspladsen i det private erhvervsliv, ift. at skabe bedre vilkår for diversitet, og formidle viden om minoritetsstress.</p>
+          <br />
+          <p>Derudover underviser jeg frivillige og mentorer i at skabe bæredygtighed gennem selvomsorg og sunde grænser.</p>
+        </div>
+
+        <div class="desk-col-4 col-flex">
+          <h3>Priser</h3>
+          <br />
+          <p>Startprisen er i udgangspunktet <strong>8000 kr</strong> for to timer.</p>
+          <br />
+          <p>Derefter er prisen <strong>10.000 kr</strong> for tre timer, med pause.</p>
+          <br />
+          <p>For hele dage, normeret til 5 timer, er min pris typisk <strong>15.000 kr</strong>.</p>
+        </div>
+
+        <div class="desk-col-4 blue-background col-flex">
+          <h3>Kontakt mig gerne, så vi kan finde ud af jeres behov.</h3>
+          <br />
+          <p>Fortæl lidt om de problemstillinger I møder I jeres praksis eller kontekst, og del gerne hvad der særligt optager jer, som I gerne vil vide mere om.</p>
+          <br />
+          <p>Kontakt mig på mail her:</p>
+          <a href="mailto:sundevester@gmail.com" class="button">Mail</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="grid-container">
+        <div class="footer-content-container">
+          <img src="img/telefon.webp" alt="Phone icon" width="15%" />
+          <img src="img/mail.webp" alt="Mail icon" width="15%" />
+        </div>
+        <div class="footer-content-container">
+          <img src="img/instagram.webp" alt="insta logo" width="15%" />
+          <img src="img/facebook.webp" alt="Fb logo" width="15%" />
+        </div>
+        <div class="footer-content-container">
+          <img src="img/pride.webp" alt="Pride flag" width="15%" />
+          <img src="img/nonbinary.webp" alt="Non Binary flag" width="15%" />
+        </div>
+
+        <div class="infofooter">
+          <p>Sms: +4593866601</p>
+          <p>Mail: soelvestorm@protonmail.com</p>
+        </div>
+        <div class="copyright">&#169; Sølve Storm</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

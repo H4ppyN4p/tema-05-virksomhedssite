@@ -1,13 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/medier.css">
-</head>
-<body>
-    
-</body>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medier</title>
+    <link rel="icon" type="Favicon" href="/img/logo.webp" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/medier.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html"><img src="img/logo.webp" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="terapi.html">Terapi</a></li>
+          <li><a href="normkritik.html">Normkritik</a></li>
+          <li><a href="undervisning.html">Læringscenter</a></li>
+          <li><a href="medier.html">Medier</a></li>
+          <li><a href="omsoelve.html">Om Sølve</a></li>
+          <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li>
+              <button class="menu-toggle-close" onclick="toggleMenu()">
+                X
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="media">Medier</h1>
+      <div class="slider-container">
+        <div class="slides" id="slides">
+          <div class="slide" data-index="0">
+            <img src="img/forlag.webp" alt="" />
+            <div class="slide-content">
+              <h2>Psykologernes fagblad</h2>
+              <p>
+                Artikelen går tæt på normkritisk psykologi og et normbrydende
+                liv for Sølve som psykolog.
+              </p>
+              <a href="https://www.dp.dk/p-psykologernes-fagmagasin/"
+                >Dansk Psykologiforeningsblad</a
+              >
+            </div>
+          </div>
+
+          <div class="slide" data-index="1">
+            <img src="img/drtv.webp" alt="" />
+            <div class="slide-content">
+              <h2>Sex med P3 - Transkroppen</h2>
+              <p>
+                I programmet taler transpersoner selv om deres krop, og Sølve
+                deltager som ekspert i køn og nonbinær psykolog.
+              </p>
+              <a
+                href="https://www.dr.dk/drtv/episode/sex-med-p3_-transkrop_338763"
+                >DRTV - Sex med P3</a
+              >
+            </div>
+          </div>
+
+          <div class="slide" data-index="2">
+            <img src="img/informationen.webp" alt="" />
+            <div class="slide-content">
+              <h2>Parterapeuter og kønsroller</h2>
+              <p>
+                Parterapeuters råd har ikke kun personlige, men også politiske
+                konsekvenser.
+              </p>
+              <a
+                href="https://www.information.dk/debat/2020/03/parterapeuter-gaar-ukritisk-koensroller-fastholder-patriarkalske-magtstrukturer"
+                >Information</a
+              >
+            </div>
+          </div>
+
+          <div class="slide" data-index="3">
+            <img src="img/politiken.webp" alt="" />
+            <div class="slide-content">
+              <h2>
+                Vi skal stoppe med at forbinde ’offer’ med ’offermentalitet’
+              </h2>
+              <p>
+                Vi må som samfund gøre markant mere for at stoppe
+                offerbebrejdelse.
+              </p>
+              <a href="https://politiken.dk/debat/debatindlaeg/art7920672"
+                >Politiken</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-bar">
+          <input type="range" id="sliderRange" min="0" max="3" value="0" />
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <button onclick="closePopup()">×</button>
+        <p>Hej,</p>
+        <p>
+          Tak for din henvendelse. Jeg får i perioder henvendelser, der ikke er
+          relateret til min praksis. For støtte og information, kontakt
+          venligst:
+        </p>
+        <ul>
+          <li>Sex &amp; Samfund</li>
+          <li>LGBT+ Danmark</li>
+          <li>Sabaah</li>
+        </ul>
+        <p>
+          De har lister over terapeuter, sociale grupper og mere. Kig også under
+          'Positive Fællesskaber'.
+        </p>
+        <p>Kh, Sølve.</p>
+      </div>
+      <div class="info-circle" id="infoCircle" onclick="openPopup()">!</div>
+
+      <script src="script.js"></script>
+    </main>
+    <footer>
+      <div id="grid-container">
+        <div class="footer-content-container">
+          <img src="/img/phonelogo.webp" alt="Phone icon" />
+          <img src="/img/maillogo.webp" alt="Mail icon" />
+        </div>
+        <div class="footer-content-container">
+          <img src="/img/instalogo.webp" alt="insta logo" />
+          <img src="/img/Fblogo.webp" alt="Fb logo" />
+        </div>
+        <div class="footer-content-container">
+          <img src="/img/Prideflag.webp" alt="Pride flag" />
+          <img src="/img/NBflag.webp" alt="Non Binary flag" />
+        </div>
+
+        <div class="infofooter">
+          <p>Sms: +4593866601</p>
+          <p>Mail: soelvestorm@protonmail.com</p>
+        </div>
+        <div class="copyright">&#169; Sølve Storm</div>
+      </div>
+    </footer>
+  </body>
 </html>
