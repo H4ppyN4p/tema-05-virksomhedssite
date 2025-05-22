@@ -1,84 +1,133 @@
-
 /* Basis reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #f9f6f2;
-    color: #333;
-    padding: 1rem;
-  }
-  
-  /* Grid wrapper */
-  .grid_1x8 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #f9f6f2;
+  color: #333;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+.overskrift {
+  margin-bottom: 10px;
+}
+
+/* Grid wrapper */
+.grid_1x8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.grid_row_1x3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Kort (card) styling */
+.desk-col-4 {
+  background-color: white;
+  padding: 1.5rem;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.col-no-style {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Billede */
+.desk-col-4 img {
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.desk_row_2 {
+  grid-row: span 2;
+}
+
+/* Link-knap */
+.button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Desktop: 3 kolonner */
+@media (min-width: 768px) {
   .grid_row_1x3 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  /* Kort (card) styling */
-  .desk-col-4 {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-
-  
-  /* Billede */
-  .desk-col-4 img {
-
-    border-radius: 8px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover
-  }
-
-  .desk_row_2 {
-    grid-row: span 2;
-  }
-
-  
-  /* Link-knap */
-  .button {
-    display: inline-block;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    color: white;
-    background-color: #333;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  /* Desktop: 3 kolonner */
-  @media (min-width: 768px) {
-    .grid_row_1x3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  /* Tilføj for ens højde */
+}
+/* Tilføj for ens højde */
 .col-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: stretch;
-  }
-  
-  /* Sikrer billeder ikke bryder layoutet */
-  .desk-col-4 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  margin-bottom: 20px;
+}
 
-  .blue-background {
-    background-color: #EEF2F4;
-  }
+/* Sikrer billeder ikke bryder layoutet */
+.desk-col-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blue-background {
+  background-color: #eef2f4;
+  margin-bottom: 4px;
+}
+
+.mailcontact {
+  background-color: #3e4d53;
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 5px solid #3e4d54;
+  color: white;
+}
+
+.mailcontact:hover {
+  font-size: large;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+  background-color: #d8e4e4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: color 0.1s, background-color 0.1s;
+  border: 5px solid #d8e4e4;
+  color: black;
+}
+
+.mailcontact a {
+  font-family: KarlaRegular;
+  text-decoration: none;
+  color: #ffff;
+}
+
+ul,
+li {
+  padding: 10px;
+}
