@@ -115,16 +115,22 @@ h4 {
 }
 
 .left-column {
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
 @media (width <= 600px) {
   .main-container,
-  .right-column,
-  .left-column,
-  .image1 {
+  .right-column {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-rows: 1fr;
+  }
+
+  .left-column {
+    grid-template-columns: 1fr;
+  }
+
+  .image1 {
+    grid-column: span 1;
   }
 }
