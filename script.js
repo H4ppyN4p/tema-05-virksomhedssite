@@ -13,6 +13,9 @@ slider.addEventListener('input', () => {
   });
 }); 
 
+function toggleMenu() {
+    document.querySelector(".mobile-menu").classList.toggle("active");
+}
 
 // POP-UP - AVI
 
