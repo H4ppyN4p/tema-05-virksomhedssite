@@ -18,3 +18,8 @@ window.addEventListener("load", function() {
   }, 4000);
 });
 
+
+function toggleMenu() {
+    document.querySelector(".mobile-menu").classList.toggle("active");
+}
+
