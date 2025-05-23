@@ -52,7 +52,7 @@
   font-size: large;
   padding: 20px;
   border-radius: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   border: 5px solid #3e4d54;
   color: white;
 }
@@ -62,7 +62,7 @@
   font-weight: bold;
   padding: 20px;
   border-radius: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: #d8e4e4;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: color 0.1s, background-color 0.1s;
