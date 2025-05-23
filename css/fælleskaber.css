@@ -20,9 +20,12 @@ main.container {
 }
 
 .falleslink {
-  font-family: KarlaRegular;
   text-decoration: none;
-  color: #ffff;
+  background-color: #3e4d53;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 2px;
+  color: white;
 }
 
 .intro {
