@@ -4,13 +4,11 @@
   padding: 0;
 }
 
-main { 
+main {
   margin-bottom: 30px;
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #f8f6f2;
   color: #222;
   line-height: 1.6;
 }
@@ -19,6 +17,12 @@ main.container {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.falleslink {
+  font-family: KarlaRegular;
+  text-decoration: none;
+  color: #ffff;
 }
 
 .intro {
@@ -105,7 +109,7 @@ main.container {
 
 @media (max-width: 1000px) {
   .second-order {
-    order: 1  ;
+    order: 1;
   }
 
   .intro {
@@ -118,8 +122,9 @@ main.container {
     flex: 1 1 100%;
   }
 
-  .intro-text h1 {
+  .intro-text h4 {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
 
   .card h2 {
