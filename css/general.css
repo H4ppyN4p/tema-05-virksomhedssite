@@ -156,6 +156,7 @@ h4 {
 		gap: 15%;
 		background-color: #3e4d53;
 		padding: 30px 0;
+		margin-top: 30px;
 	}
 
 	.footer-content-container {
@@ -174,6 +175,9 @@ h4 {
 
 	.grid_1x8 {
 		grid-template-columns: 1fr;
+	}
+	main {
+		margin: 0px 40px 0px 40px;
 	}
 }
 
