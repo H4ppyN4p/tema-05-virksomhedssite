@@ -44,7 +44,7 @@
     </header>
     <main>
       <h1 class="omsoelve">Om Sølve og deres arbejde</h1>
-      <div class="grid-solve">
+      <div class="main-container">
         <div class="left-column">
           <div class="textbox1">
             <h3>Professionelt virke</h3>
@@ -92,6 +92,9 @@
               navigere i sociale normer og politiske refleksioner.
             </p>
           </div>
+          <img class="image1" src="/img/Sølve1.webp" alt="Billede af Sølve" />
+        </div>
+        <div class="right-column">
           <div class="textbox3">
             <h3>Arbejde og projekter</h3>
             <h4>Selvstændig psykolog, 2021 - nu</h4>
@@ -127,11 +130,7 @@
               >
             </button>
           </div>
-        </div>
-        <div class="right-column">
-          <img class="image1" src="/img/Sølve1.webp" alt="Billede af Sølve" />
           <div class="textbox4">
-            <h3>De Unges hus</h3>
             <h4>
               Psykolog i De Unges Hus, Københavns Kommunes Socialforvaltning,
               2021 - 2023
@@ -172,6 +171,28 @@
           </div>
         </div>
       </div>
+
+
+      <div class="popup" id="popup">
+        <button onclick="closePopup()">×</button>
+        <p>Hej,</p>
+        <p>
+          Tak for din henvendelse. Jeg får i perioder henvendelser, der ikke er
+          relateret til min praksis. For støtte og information, kontakt
+          venligst:
+        </p>
+        <ul>
+          <li>Sex &amp; Samfund</li>
+          <li>LGBT+ Danmark</li>
+          <li>Sabaah</li>
+        </ul>
+        <p>
+          De har lister over terapeuter, sociale grupper og mere. Kig også under
+          'Positive Fællesskaber'.
+        </p>
+        <p>Kh, Sølve.</p>
+      </div>
+      <div class="info-circle" id="infoCircle" onclick="openPopup()">!</div>
     </main>
     <footer>
       <div id="grid-container">
@@ -195,6 +216,6 @@
         <div class="copyright">&#169; Sølve Storm</div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>
