@@ -18,6 +18,17 @@ main {
 	margin-bottom: 10px;
 }
 
+.desk-col-4 p:last-child {
+	margin-bottom: 30px;
+}
+
+.blue-background h3:nth-of-type(2) {
+	margin-bottom: 15px;
+}
+.blue-background p {
+	margin: 10px 0px;
+}
+
 /* Grid wrapper */
 .grid_1x8 {
 	display: grid;
@@ -37,6 +48,10 @@ main {
 	height: 100%;
 	border-radius: 12px;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.desk-col-4 li {
+	color: #05021d;
 }
 
 .col-no-style {
