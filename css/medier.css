@@ -2,7 +2,6 @@
   text-align: left;
   margin-top: 100px;
   margin-left: 25px;
-  font-size: 2rem;
   color: #05021d;
   font-weight: 600;
 }
@@ -174,6 +173,10 @@ input[type="range"]::-moz-range-thumb:hover {
   .phone-container {
     display: grid;
     grid-template-rows: 1fr;
+  }
+
+  .phone-center-content {
+    width: 100%; display: flex; align-items: center; justify-content: center;
   }
 
   .phone-article {
