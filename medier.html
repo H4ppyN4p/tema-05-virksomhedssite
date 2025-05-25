@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medier</title>
-    <link rel="icon" type="Favicon" href="/img/logo.webp" />
+    <title>Document</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/medier.css" />
@@ -13,7 +12,7 @@
     <header>
       <nav>
         <div class="logo">
-          <a href="/index.html"><img src="img/logo.webp" alt="Logo" /></a>
+          <img src="img/logo.webp" alt="Logo" />
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Hjem</a></li>
@@ -21,192 +20,87 @@
           <li><a href="normkritik.html">Normkritik</a></li>
           <li><a href="undervisning.html">Læringscenter</a></li>
           <li><a href="medier.html">Medier</a></li>
-          <li><a href="omsoelve.html">Om Sølve</a></li>
+          <li><a href="omseolve.html">Om Sølve</a></li>
           <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
         </ul>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <div class="mobile-menu">
-          <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="terapi.html">Terapi</a></li>
-            <li><a href="normkritik.html">Normkritik</a></li>
-            <li><a href="undervisning.html">Læringscenter</a></li>
-            <li><a href="medier.html">Medier</a></li>
-            <li><a href="omsoelve.html">Om Sølve</a></li>
-            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
-            <li>
-              <button class="menu-toggle-close" onclick="toggleMenu()">
-                X
-              </button>
-            </li>
-          </ul>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </nav>
     </header>
     <main>
-      <h1 class="media">Medier</h1>
-      <div class="slider-container">
-        <div class="slides" id="slides">
-          <div class="slide" data-index="0">
-            <img src="img/forlag.webp" alt="" />
-            <div class="slide-content">
-              <h2>Psykologernes fagblad</h2>
-              <p>
-                Artikelen går tæt på normkritisk psykologi og et normbrydende
-                liv for Sølve som psykolog.
-              </p>
-              <a href="https://www.dp.dk/p-psykologernes-fagmagasin/"
-                >Dansk Psykologiforeningsblad</a
-              >
-            </div>
-          </div>
-
-          <div class="slide" data-index="1">
-            <img src="img/drtv.webp" alt="" />
-            <div class="slide-content">
-              <h2>Sex med P3 - Transkroppen</h2>
-              <p>
-                I programmet taler transpersoner selv om deres krop, og Sølve
-                deltager som ekspert i køn og nonbinær psykolog.
-              </p>
-              <a
-                href="https://www.dr.dk/drtv/episode/sex-med-p3_-transkrop_338763"
-                >DRTV - Sex med P3</a
-              >
-            </div>
-          </div>
-
-          <div class="slide" data-index="2">
-            <img src="img/informationen.webp" alt="" />
-            <div class="slide-content">
-              <h2>Parterapeuter og kønsroller</h2>
-              <p>
-                Parterapeuters råd har ikke kun personlige, men også politiske
-                konsekvenser.
-              </p>
-              <a
-                href="https://www.information.dk/debat/2020/03/parterapeuter-gaar-ukritisk-koensroller-fastholder-patriarkalske-magtstrukturer"
-                >Information</a
-              >
-            </div>
-          </div>
-
-          <div class="slide" data-index="3">
-            <img src="img/politiken.webp" alt="" />
-            <div class="slide-content">
-              <h2>
-                Vi skal stoppe med at forbinde ’offer’ med ’offermentalitet’
-              </h2>
-              <p>
-                Vi må som samfund gøre markant mere for at stoppe
-                offerbebrejdelse.
-              </p>
-              <a href="https://politiken.dk/debat/debatindlaeg/art7920672"
-                >Politiken</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="slider-bar">
-          <input type="range" id="sliderRange" min="0" max="3" value="0" />
-        </div>
-      </div>
-
-
-      <div class="phone-container">
-        <div class="phone-article">
-          <img src="img/forlag.webp" alt="" />
-          <div class="phone-content">
-            <h2>Psykologernes fagblad</h2>
-            <p>
-              Artikelen går tæt på normkritisk psykologi og et normbrydende
-              liv for Sølve som psykolog.
-            </p>
-            <div class="phone-center-content">
-                <a href="https://www.dp.dk/p-psykologernes-fagmagasin/"
-              >Dansk Psykologiforeningsblad</a
-            >
-            </div>
-          
-          </div>
-        </div>
-
-        <div class="phone-article">
-          <img src="img/drtv.webp" alt="" />
-          <div class="phone-content">
-            <h2>Sex med P3 - Transkroppen</h2>
-            <p>
-              I programmet taler transpersoner selv om deres krop, og Sølve
-              deltager som ekspert i køn og nonbinær psykolog.
-            </p>
-            <div class="phone-center-content">
-              <a
-                href="https://www.dr.dk/drtv/episode/sex-med-p3_-transkrop_338763"
-                >DRTV - Sex med P3</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="phone-article">
-          <img src="img/informationen.webp" alt="" />
-          <div class="phone-content">
-            <h2>Parterapeuter og kønsroller</h2>
-            <p>
-              Parterapeuters råd har ikke kun personlige, men også politiske
-              konsekvenser.
-            </p>
-            <div class="phone-center-content">
-              <a
-                href="https://www.information.dk/debat/2020/03/parterapeuter-gaar-ukritisk-koensroller-fastholder-patriarkalske-magtstrukturer"
-                >Information</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="phone-article">
-          <img src="img/politiken.webp" alt="" />
-          <div class="phone-content">
-            <h2>
-              Vi skal stoppe med at forbinde ’offer’ med ’offermentalitet’
-            </h2>
-            <p>
-              Vi må som samfund gøre markant mere for at stoppe
-              offerbebrejdelse.
-            </p>
-            <div class="phone-center-content"> 
-              <a href="https://politiken.dk/debat/debatindlaeg/art7920672"
-                >Politiken</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="popup" id="popup">
-        <button onclick="closePopup()">×</button>
-        <p>Hej,</p>
+      <h1>Medier</h1>
+      <div class="info-box">
         <p>
-          Tak for din henvendelse. Jeg får i perioder henvendelser, der ikke er
-          relateret til min praksis. For støtte og information, kontakt
-          venligst:
+          På denne side finder i forskellige medier hvor Sølve har bidraget med
+          sin ekspertise. Siden vil løbende blive opdateret.
         </p>
-        <ul>
-          <li>Sex &amp; Samfund</li>
-          <li>LGBT+ Danmark</li>
-          <li>Sabaah</li>
-        </ul>
-        <p>
-          De har lister over terapeuter, sociale grupper og mere. Kig også under
-          'Positive Fællesskaber'.
-        </p>
-        <p>Kh, Sølve.</p>
       </div>
-      <div class="info-circle" id="infoCircle" onclick="openPopup()">!</div>
-
-
+      <div class="media-container">
+        <div class="media-card">
+          <img
+            src="img/forlag1.png"
+            alt="Billede af Sølve på forsiden af Forlag magasin"
+          />
+          <h4>Psykologernes fagblad</h4>
+          <p>
+            Artikelen går tæt på normkritisk psykologi og et normbrydende liv
+            for Sølve som psykolog.
+          </p>
+          <a
+            href="https://www.dp.dk/p-psykologernes-fagmagasin/"
+            target="_blank"
+            class="media-button"
+            >Dansk Psykologiforeningsblad</a
+          >
+        </div>
+        <div class="media-card">
+          <img src="img/drtv.webp" alt="Billede fra Sex med P3" />
+          <h4>Sex med P3 - Transkroppen</h4>
+          <p>
+            I programmet taler transpersoner selv om deres krop, og Sølve
+            deltager som ekspert i køn og nonbinær psykolog.
+          </p>
+          <a
+            href="https://www.dr.dk/drtv/episode/sex-med-p3_-transkrop_338763"
+            target="_blank"
+            class="media-button"
+            >DRTV - Sex med P3</a
+          >
+        </div>
+        <div class="media-card">
+          <img
+            src="img/informationen.webp"
+            alt="Illustration fra Informationen artikel"
+          />
+          <h4>Parterapeuter og kønsroller</h4>
+          <p>
+            Parterapeuters råd har ikke kun personlige, men også politiske
+            konsekvenser.
+          </p>
+          <a
+            href="https://www.information.dk/debat/2020/03/parterapeuter-gaar-ukritisk-koensroller-fastholder-patriarkalske-magtstrukturer"
+            target="_blank"
+            class="media-button"
+            >Informationen</a
+          >
+        </div>
+        <div class="media-card">
+          <img src="img/politiken.webp" alt="Illustration fra Politiken" />
+          <h4>Vi skal stoppe med at forbinde ’offer’ med ’offermentalitet’</h4>
+          <p>
+            Vi må som samfund gøre markant mere for at stoppe offerbebrejdelse.
+          </p>
+          <a
+            href="https://politiken.dk/debat/debatindlaeg/art7920672"
+            target="_blank"
+            class="media-button"
+            >Politiken</a
+          >
+        </div>
+      </div>
     </main>
     <footer>
       <div id="grid-container">
@@ -230,8 +124,6 @@
         <div class="copyright">&#169; Sølve Storm</div>
       </div>
     </footer>
-
-  <script src="script.js"></script> 
-  <script src="popup.js"></script> 
+    <script src="script.js"></script>
   </body>
 </html>
