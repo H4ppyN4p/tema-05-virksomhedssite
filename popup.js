@@ -1,10 +1,9 @@
 //Implementering a cookie functionalitet for auto pop-op
 //Web3school doc for cookies; https://www.w3schools.com/js/js_cookies.asp
+//Web3school doc for Date() and GetTime(); https://www.w3schools.com/jsref/jsref_gettime.asp
+
 
 let cookies = document.cookie
-
-console.log(cookies)
-
 //document.cookie = "lastName=; path=/; expires=Sun, 1 January 2020 12:00:00 UTC"
 
 
@@ -32,7 +31,7 @@ function checkCookie() {
   //then if the cookie exist
   if (cookieExists){
 
-    console.log("it exists")
+    //console.log("it exists")
 
     //Set the popup element to be displayed closed
     document.getElementById("popup").style.display = "none";
@@ -40,7 +39,7 @@ function checkCookie() {
     
   //else, create the cookie
   } else {
-    console.log("it doesnt exist - creating cookie")
+    console.log("Cookie doesnt exist - creating cookie")
 
     //Create a new Date() constant to get the date
     const d = new Date()
