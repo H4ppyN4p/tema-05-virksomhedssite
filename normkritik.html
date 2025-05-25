@@ -1,87 +1,185 @@
 <!DOCTYPE html>
 <html lang="da">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <link rel="stylesheet" href="css/general.css" /> -->
-		<link rel="stylesheet" href="css/normkritik.css" />
-		<title>Normkritik</title>
-	</head>
-	<body>
-		<header></header>
-		<main>
-			<h1>Normkritik</h1>
-			<section class="grid_1x8">
-				<div class="desk-col-tekst-4">
-					<h3>Hvad er normer, og hvordan påvirker de os?</h3>
-					<p>
-						Normer har en stor betydning for vores liv og handlemuligheder. Ofte vil mennesker være styrede af
-						normer på mere eller mindre bevidste måder.
-					</p>
-					<p>
-						Normer kan ses som at komme både udefra og indefra.  Det udefra er alt det vi lytter til i vores
-						miljøer og familier, og på samfundsniveau. Når du lærer om hvilke særlige forventninger og narrativer
-						der er til lige præcis dig, ud fra køn, seksualitet, etnicitet eller socialklasse.
-					</p>
-					<p>
-						Det indefra er summen af det du har lært, der er blevet ‘naturligt’ og noget du ikke længere sætter
-						spørgsmålstegn ved. Du bliver på en måde selvgenererende i at opretholde de idéer.
-					</p>
-				</div>
-				<div class="desk-col-img-4">
-					<img src="/img/soelve-kat-w.webp" alt="en katte statue, der holder pride flaget" />
-				</div>
-			</section>
-			<section class="grid_1x8">
-				<div class="desk-col-img-4">
-					<img src="img/soelve-poly-w.webp" alt="en illustration af et poly forhold" />
-				</div>
-				<div class="desk-col-tekst-4">
-					<h3>Når normer begrænser os</h3>
-					<p>
-						Ofte kommer bagvedliggende, ubevidste normer i vejen for vores drømme eller evne til at leve
-						autentisk.
-					</p>
-					<p>
-						Normer kan hæmme din egen version af et godt liv, og i nogle tilfælde kan normer være så
-						undertrykkende, at det er svært for mennesker at passe ind på et studie, en arbejdsplads eller endda
-						i et samfund.
-					</p>
-				</div>
-			</section>
-			<section class="grid_1x8">
-				<div class="desk-col-tekst-4">
-					<h3>Et normkritisk psykologisk arbejde</h3>
-					<p>
-						Min opgave som normkritisk psykolog er at hjælpe til med at gøre de usynlige normer synlige for dig,
-						evaluere og ‘afinstallere’ de normer og overbevisninger der ikke tjener dig.
-					</p>
-					<p>
-						Vi kan sammen sørge over, eller være vrede på de strukturer, der ikke er mulige at ændre på lige nu,
-						og måske transformere disse følelser til et håb, en længsel eller en ny vej at gå.
-					</p>
-					<p>
-						Det vigtige er at du ved, hvordan dit mentale helbred skal passes på, i en verden og et samfund der
-						har mange negative effekter på psyken, og er plasteret til med uendelige, tårnhøje krav til
-						individet.
-					</p>
-					<button>
-						<a
-							href="https://system.easypractice.net/book/psykolog-slve-storm-falkemnberg?cookie_fixed=1#choose-service"
-							target="_blank"
-						>
-							BOOK TERAPI
-						</a>
-					</button>
-				</div>
-				<div class="desk-col-img-4">
-					<img
-						src="img/soelve-work-w.webp"
-						alt="Stripper-sko og ben i netstrømper-agtig med teksten'sex work is work'"
-					/>
-				</div>
-			</section>
-		</main>
-		<footer></footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/normkritik.css" />
+    <title>Normkritik</title>
+    <link rel="icon" type="Favicon" href="/img/logo.webp" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html"><img src="img/logo.webp" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="terapi.html">Terapi</a></li>
+          <li><a href="normkritik.html">Normkritik</a></li>
+          <li><a href="undervisning.html">Læringscenter</a></li>
+          <li><a href="medier.html">Medier</a></li>
+          <li><a href="omsoelve.html">Om Sølve</a></li>
+          <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="terapi.html">Terapi</a></li>
+            <li><a href="normkritik.html">Normkritik</a></li>
+            <li><a href="undervisning.html">Læringscenter</a></li>
+            <li><a href="medier.html">Medier</a></li>
+            <li><a href="omsoelve.html">Om Sølve</a></li>
+            <li><a href="fælleskaber.html">Positive fællesskaber</a></li>
+            <li>
+              <button class="menu-toggle-close" onclick="toggleMenu()">
+                X
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Normkritik</h1>
+      <section class="grid_1x8">
+        <div class="desk-col-tekst-4">
+          <h3>Hvad er normer, og hvordan påvirker de os?</h3>
+          <p>
+            Normer har en stor betydning for vores liv og handlemuligheder. Ofte
+            vil mennesker være styrede af normer på mere eller mindre bevidste
+            måder.
+          </p>
+          <p>
+            Normer kan ses som at komme både udefra og indefra.  Det udefra er
+            alt det vi lytter til i vores miljøer og familier, og på
+            samfundsniveau. Når du lærer om hvilke særlige forventninger og
+            narrativer der er til lige præcis dig, ud fra køn, seksualitet,
+            etnicitet eller socialklasse.
+          </p>
+          <p>
+            Det indefra er summen af det du har lært, der er blevet ‘naturligt’
+            og noget du ikke længere sætter spørgsmålstegn ved. Du bliver på en
+            måde selvgenererende i at opretholde de idéer.
+          </p>
+        </div>
+        <div class="desk-col-img-4">
+          <img
+            src="/img/solvkat2.webp"
+            alt="en katte statue, der holder pride flaget"
+          />
+        </div>
+      </section>
+      <section class="grid_1x8">
+        <div class="desk-col-img-4">
+          <img
+            src="img/solvpoly2.webp"
+            alt="en illustration af et poly forhold"
+          />
+        </div>
+        <div class="desk-col-tekst-4">
+          <h3>Når normer begrænser os</h3>
+          <p>
+            Ofte kommer bagvedliggende, ubevidste normer i vejen for vores
+            drømme eller evne til at leve autentisk.
+          </p>
+          <p>
+            Normer kan hæmme din egen version af et godt liv, og i nogle
+            tilfælde kan normer være så undertrykkende, at det er svært for
+            mennesker at passe ind på et studie, en arbejdsplads eller endda i
+            et samfund.
+          </p>
+        </div>
+      </section>
+      <section class="grid_1x8">
+        <div class="desk-col-tekst-4 lastrow">
+          <h3>Et normkritisk psykologisk arbejde</h3>
+          <p>
+            Min opgave som normkritisk psykolog er at hjælpe til med at gøre de
+            usynlige normer synlige for dig, evaluere og ‘afinstallere’ de
+            normer og overbevisninger der ikke tjener dig.
+          </p>
+          <p>
+            Vi kan sammen sørge over, eller være vrede på de strukturer, der
+            ikke er mulige at ændre på lige nu, og måske transformere disse
+            følelser til et håb, en længsel eller en ny vej at gå.
+          </p>
+          <p>
+            Det vigtige er at du ved, hvordan dit mentale helbred skal passes
+            på, i en verden og et samfund der har mange negative effekter på
+            psyken, og er plasteret til med uendelige, tårnhøje krav til
+            individet.
+          </p>
+          <a
+            href="https://system.easypractice.net/book/psykolog-slve-storm-falkemnberg?cookie_fixed=1#choose-service"
+            target="_blank"
+          >
+            <button id="book-terapi">BOOK TERAPI</button>
+          </a>
+        </div>
+        <div class="desk-col-img-4">
+          <script
+            id="lottie"
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+
+          <dotlottie-player
+            class="lottie"
+            src="https://lottie.host/84953c03-33a9-4bdf-9525-95940d8ea591/1aEyFsQiOP.lottie"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+      </section>
+
+      <div class="popup" id="popup">
+        <button onclick="closePopup()">×</button>
+        <p>Hej,</p>
+        <p>
+          Tak for din henvendelse. Jeg får i perioder henvendelser, der ikke er
+          relateret til min praksis. For støtte og information, kontakt
+          venligst:
+        </p>
+        <ul>
+          <li>Sex &amp; Samfund</li>
+          <li>LGBT+ Danmark</li>
+          <li>Sabaah</li>
+        </ul>
+        <p>
+          De har lister over terapeuter, sociale grupper og mere. Kig også under
+          'Positive Fællesskaber'.
+        </p>
+        <p>Kh, Sølve.</p>
+      </div>
+      <div class="info-circle" id="infoCircle" onclick="openPopup()">!</div>
+    </main>
+    <footer>
+      <div id="grid-container">
+        <div class="footer-content-container">
+          <img src="/img/phonelogo.webp" alt="Phone icon" />
+          <img src="/img/maillogo.webp" alt="Mail icon" />
+        </div>
+        <div class="footer-content-container">
+          <img src="/img/instalogo.webp" alt="insta logo" />
+          <img src="/img/Fblogo.webp" alt="Fb logo" />
+        </div>
+        <div class="footer-content-container">
+          <img src="/img/Prideflag.webp" alt="Pride flag" />
+          <img src="/img/NBflag.webp" alt="Non Binary flag" />
+        </div>
+
+        <div class="infofooter">
+          <p>Sms: +4593866601</p>
+          <p>Mail: soelvestorm@protonmail.com</p>
+        </div>
+        <div class="copyright">&#169; Sølve Storm</div>
+      </div>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
 </html>
