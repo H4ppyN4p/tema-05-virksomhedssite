@@ -1,4 +1,4 @@
-img {
+main img {
 	max-width: 75%;
 
 	margin-left: 70px;
@@ -143,5 +143,13 @@ a {
 
 	.desk-col-tekst-4:nth-child(2) {
 		background-color: #eef2f4;
+	}
+
+	main img {
+		margin-left: 40px;
+	}
+
+	#illustration2 {
+		margin-right: 40px;
 	}
 }
