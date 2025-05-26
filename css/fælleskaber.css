@@ -1,165 +1,169 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.info-circle {
+  line-height: 1.2;
 }
 
 main {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 body {
-	color: #222;
-	line-height: 1.6;
+  color: #222;
+  line-height: 1.6;
 }
 
 main.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 p {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .falleslink button {
-	background-color: #3e4d53;
-	text-decoration: none;
-	margin-top: 2px;
-	margin-bottom: 10px;
-	padding: 10px;
+  background-color: #3e4d53;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .falleslink {
-	font-size: smaller;
-	text-decoration: none;
-	background-color: #3e4d53;
-	padding: 5px;
-	border-radius: 10px;
-	margin-top: 2px;
-	margin-bottom: 10px;
-	border: 5px solid #3e4d53;
-	color: white;
+  font-size: smaller;
+  text-decoration: none;
+  background-color: #3e4d53;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  border: 5px solid #3e4d53;
+  color: white;
 }
 
 .falleslink:hover {
-	padding: 5px;
-	border-radius: 10px;
-	background-color: #d8e4e4;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-	transition: color 0.1s, background-color 0.1s;
-	border: 5px solid #d8e4e4;
-	color: black;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #d8e4e4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: color 0.1s, background-color 0.1s;
+  border: 5px solid #d8e4e4;
+  color: black;
 }
 
 .intro {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 30px;
-	align-items: flex-start;
-	margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 60px;
 }
 
 .intro-text h1 {
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-	color: #111;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #111;
 }
 
 .card {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 12px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .card h2 {
-	font-size: 1.4rem;
-	margin-bottom: 10px;
-	color: #444;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #444;
 }
 
 .card em {
-	display: block;
-	margin-top: 20px;
-	font-style: italic;
-	font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .intro-image {
-	flex: 1 1 300px;
+  flex: 1 1 300px;
 }
 
 .intro-image img {
-	width: 100%;
-	height: auto;
-	border-radius: 12px;
-	object-fit: cover;
-	display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
 }
 
 .communities h2 {
-	font-size: 2rem;
-	margin-bottom: 30px;
-	color: #111;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
 }
 
 .community-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .community-card {
-	background-color: #eef2f4;
-	padding: 20px;
-	border-radius: 16px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-	transition: transform 0.2s ease;
+  background-color: #eef2f4;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 }
 
 .community-card:hover {
-	transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .community-card h3 {
-	font-size: 1.1rem;
-	color: #223;
-	margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #223;
+  margin-bottom: 10px;
 }
 
 .community-card p {
-	font-size: 0.95rem;
-	color: #444;
+  font-size: 0.95rem;
+  color: #444;
 }
 
 .community-card button {
-	border: none;
+  border: none;
 }
 
 @media (max-width: 1000px) {
-	.second-order {
-		order: 1;
-	}
+  .second-order {
+    order: 1;
+  }
 
-	.intro {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-	.intro-image,
-	.intro-text {
-		flex: 1 1 100%;
-	}
+  .intro-image,
+  .intro-text {
+    flex: 1 1 100%;
+  }
 
-	.intro-text h4 {
-		font-size: 2rem;
-		margin-bottom: 20px;
-	}
+  .intro-text h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-	.card h2 {
-		font-size: 1.2rem;
-	}
+  .card h2 {
+    font-size: 1.2rem;
+  }
 }
